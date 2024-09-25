@@ -1,0 +1,165 @@
+#headerBody{
+width: 100%;
+height: 50px;
+box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
+border-radius: .5rem;
+overflow: hidden;
+display: flex; /* Utilizamos flexbox */
+    justify-content: space-around; /* Centra horizontalmente y añade espacio alrededor */
+    align-items: center; /* Centra verticalmente */
+
+}
+
+#searchMenu{
+    display: flex; /* Utilizamos flexbox */
+    align-items: center; /* Centra verticalmente */
+    width: 45%;
+}
+
+#homeIcon{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px; 
+    transition: transform 0.3s ease; /* Añade una transición suave */
+
+}
+
+#homeIcon:hover{
+    transform: scale(1.1); /* Agranda el botón un 10% */
+}
+
+#btonHome{
+    background-color: goldenrod;
+    height: 38px;
+    width: 150px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 0px solid black;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' sans-serif;
+    transition: background-color 0.3s ease; /* Añade una transición suave */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+
+}
+
+#btonHome:hover{
+    transform: scale(1.01); /* Agranda el botón un 10% */
+    background: gold;
+}
+
+#btonJobs{
+    height: 25px;
+    width: max-content;
+    font-size: 25px;
+    border: 0px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' sans-serif;
+    transition: border-bottom 0.3s ease; /* Añade una transición suave */
+    background-color: transparent;
+}
+
+#btonJobs:hover{
+    border-bottom: 1px solid black; /* Aparece una línea blanca abajo */
+}
+
+#srchInput{
+    width: 90%;
+    height: 35px;
+    font-size: 25px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-indent: 15px;
+    transition: background-color 0.3s ease; /* Añade una transición suave */
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' sans-serif;
+    overflow: auto;
+}
+
+#srchInput:hover{
+    background-color: #c9c9c9;
+}
+
+#bellIcon,#userIcon,#envelopeIcon,#menuIcon{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px; 
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+#bellIcon:hover,#userIcon:hover,#envelopeIcon:hover,#menuIcon:hover{
+    transform: scale(1.1); /* Agranda el botón un 10% */
+}
+
+#searchBtn{
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+#searchBtn:hover{
+    transform: scale(1.1); /* Agranda el botón un 10% */
+
+}
+
+#searchBtnBox{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 0px;
+    border: 1px solid gray;
+    background-color: gray;
+    height: 39px;
+    width: 70px;
+    margin-bottom: 1px;   
+}
+
+@media (max-width: 768px) {
+    #bellIcon,
+    #envelopeIcon,
+    #userIcon,#btonJobs,#btonHome {
+        display: none; /* Oculta estos iconos en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 1000px) {
+    #btonJobs {
+        display: none; /* Oculta estos iconos en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 1200px) {
+    #btonHome {
+        display: none; /* Oculta estos iconos en pantallas más pequeñas */
+    }
+}
+
+#dropdownMenu {
+    position: absolute;
+    top: 60px; 
+    right: 10px; 
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra del menú */
+    border-radius: 5px;
+    z-index: 1000; 
+}
+
+#dropdownMenu ul { 
+    list-style: none;   
+    padding: 10px;
+    margin: 0px; 
+}
+
+#dropdownMenu li {
+    padding: 8px 12px; 
+}
+
+#dropdownMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#dropdownMenu li:hover {
+    background-color: #f0f0f0; 
+}
+
+.hidden {
+    display: none; 
+}
